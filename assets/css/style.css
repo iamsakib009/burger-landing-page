@@ -150,12 +150,17 @@ img:not(.logo) {
   position: absolute;
   bottom: 1.5rem;
   left: 1.5rem;
+  text-align: center;
 }
 .inner-border span {
   font-size: 4.94rem;
   color: var(--clr-white);
   font-family: var(--ff-secondary);
   margin-left: 2rem;
+  text-align: center;
+
+  position: relative;
+  top: 10px;
 }
 .hero-title {
   font-size: 11.41rem;
@@ -203,6 +208,10 @@ img:not(.logo) {
   left: 5%;
   font-family: var(--ff-secondary);
   color: var(--clr-white);
+}
+.single-text-r {
+  top: 12%;
+  left: 5%;
 }
 .single-text-first {
   font-size: 2.5rem;
@@ -380,25 +389,75 @@ img:not(.logo) {
 }
 /* Section Booking End */
 /* Section Footer start */
-.container {
+.container-f {
   width: 100%;
+  /* min-height: 100vh; */
 }
-footer {
+
+.footer {
   background-image: url(../images/fotter-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .ft-left {
-  width: 70%;
+  width: 60%;
   float: left;
 }
 .ft-content {
-  padding: 80px 20px;
-  width: 80%;
+  width: 55%;
+  padding-top: 8rem;
+  padding-left: 3rem;
+}
+.ft-content img {
+  margin-bottom: 4rem;
 }
 
 .ft-right {
-  width: 30%;
+  width: 40%;
   float: right;
+}
+.ft-right-content {
+  width: 35%;
+  padding-top: 21rem;
+  text-align: left;
+}
+.ftl-des {
+  font-size: 1.67rem;
+  font-family: var(--ff-tertiary);
+  font-weight: 400;
+}
+
+.main-ft {
+  width: 100%;
+  display: inline-block;
+  padding-top: 16rem;
+  padding-bottom: 3rem;
+}
+.main-ft-left {
+  float: left;
+  /* padding-top: 8rem; */
+  padding-left: 3rem;
+}
+.main-ft-right {
+  float: right;
+}
+.r-des {
+  font-size: 2.07rem;
+  font-family: var(--ff-secondary);
+  font-weight: 700;
+}
+.f-copy {
+  font-size: 2rem;
+}
+.icon {
+  color: var(--clr-white);
+  font-size: 2rem;
+}
+.social-item {
+  float: left;
+}
+
+.main-ft-right ul li {
+  display: inline-block;
 }
