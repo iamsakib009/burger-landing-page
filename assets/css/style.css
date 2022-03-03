@@ -50,7 +50,7 @@ img {
   width: 100%;
   display: block;
 }
-img:not(.logo) {
+img:not(.logo, .f-logo) {
   width: 100%;
   display: block;
 }
@@ -97,6 +97,7 @@ img:not(.logo) {
 .nav__list-item {
   float: left;
   list-style: none;
+  font-weight: 400;
 }
 .nav__list-link {
   margin: 0 4.5rem;
@@ -167,6 +168,7 @@ img:not(.logo) {
   color: var(--clr-primary-2);
   font-family: var(--ff-primary);
   text-transform: var(--text-transform);
+  font-weight: 400;
 }
 .hero-suggestions {
   max-width: 40rem;
@@ -181,7 +183,7 @@ img:not(.logo) {
   color: var(--clr-primary-2);
   font-size: 5.7rem;
   font-family: var(--ff-primary);
-  font-weight: bold;
+  font-weight: 400;
 }
 /* Header End */
 /* Try it Section Start */
@@ -208,6 +210,7 @@ img:not(.logo) {
   left: 5%;
   font-family: var(--ff-secondary);
   color: var(--clr-white);
+  font-weight: 400;
 }
 .single-text-r {
   top: 12%;
@@ -241,6 +244,7 @@ img:not(.logo) {
 .tasty-title-s {
   font-size: 2.5rem;
   font-family: var(--ff-secondary);
+  font-weight: 400;
   text-transform: var(--text-transform);
   background-color: var(--clr-primary-1);
   max-width: 35rem;
@@ -251,12 +255,14 @@ img:not(.logo) {
 .tasty-title-p {
   font-size: 5rem;
   font-family: var(--ff-primary);
+  font-weight: 400;
   text-transform: var(--text-transform);
   margin-bottom: 3rem;
 }
 .tasty-des {
   font-size: 1.6rem;
   font-family: var(--ff-tertiary);
+  font-weight: 400;
   padding: 0 12rem;
   line-height: 1.6;
   color: var(--clr-paragraph);
@@ -277,17 +283,20 @@ img:not(.logo) {
 .single-image-title {
   font-size: 3.75rem;
   font-family: var(--ff-secondary);
+  font-weight: 400;
   color: var(--clr-primary-2);
   padding: 2.2rem 0;
 }
 .single-image-des {
   font-size: 1.67rem;
   font-family: var(--ff-tertiary);
+  font-weight: 400;
   color: var(--clr-paragraph);
   padding-bottom: 3.5rem;
 }
 .btn {
   display: inline-block;
+  font-weight: 400;
   text-decoration: none;
   text-transform: var(--text-transform);
   transition: var(--transition);
@@ -405,11 +414,11 @@ img:not(.logo) {
   float: left;
 }
 .ft-content {
-  width: 55%;
   padding-top: 8rem;
   padding-left: 3rem;
 }
-.ft-content img {
+.f-logo {
+  width: 50%;
   margin-bottom: 4rem;
 }
 
@@ -418,12 +427,12 @@ img:not(.logo) {
   float: right;
 }
 .ft-right-content {
-  width: 35%;
-  padding-top: 21rem;
+  padding-top: 25rem;
   text-align: left;
+  padding-left: 6rem;
 }
 .ftl-des {
-  font-size: 1.67rem;
+  font-size: 2.367rem;
   font-family: var(--ff-tertiary);
   font-weight: 400;
 }
@@ -436,28 +445,36 @@ img:not(.logo) {
 }
 .main-ft-left {
   float: left;
-  /* padding-top: 8rem; */
+
   padding-left: 3rem;
 }
 .main-ft-right {
   float: right;
+  padding-right: 3rem;
 }
 .r-des {
-  font-size: 2.07rem;
+  color: var(--clr-white);
+  font-size: 2.8rem;
   font-family: var(--ff-secondary);
   font-weight: 700;
+  display: inline-block;
 }
 .f-copy {
-  font-size: 2rem;
+  font-size: 1.67rem;
 }
 .icon {
-  color: var(--clr-white);
-  font-size: 2rem;
+  background-color: var(--clr-white);
+  color: black;
+  font-size: 2.9rem;
+
+  border-radius: 50%;
 }
 .social-item {
   float: left;
 }
-
 .main-ft-right ul li {
   display: inline-block;
+}
+.main-ft-right ul li a {
+  margin-right: 1rem;
 }
